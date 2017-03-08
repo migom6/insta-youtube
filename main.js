@@ -12,9 +12,13 @@ $(document).ready(function(){
                 q: videoName
             }
         }).done(function(data){
-            console.log(data.items[0].id.videoId);
-            $('iframe').attr('src',"https://www.youtube.com/embed/"+ data.items[0].id.videoId+ "?autoplay=1")
-            changeiframe(data.items[0].id.videoId);
-         });
+            let videoID;
+            let i = 0;
+            while(data.items[i].id.kind == 'youtube#channel'){
+                i++; 
+            }
+            videoID = data.items[i].id.videoId;
+            $('iframe').attr('src',"https://www.youtube.com/embed/"+ videoID+ "?autoplay=1");
+        });
     } 
 });
