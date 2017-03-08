@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    console.log('working');
     $('#searchVideo').on('keyup', function(e){
-        console.log(e.target.value);
         let videoName = e.target.value;
         getRequest(videoName);
     });
