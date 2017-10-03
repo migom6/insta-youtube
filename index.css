@@ -146,6 +146,9 @@
   opacity: 0.94;
   color: #f5e9e9;
   text-align: center;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
 }
 
 .text-field:hover {
