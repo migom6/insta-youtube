@@ -1,8 +1,10 @@
 # insta-youtube
+## [Live preview](https://migom6.github.io/insta-youtube/?)
 
->git clone
+## Instructions to run 
+`git clone https://github.com/migom6/insta-youtube.git`
 
->open index.html in the browser
+`cd insta-youtube`
 
+`open index.html in the browser`
 
-##For live preview <a href = "https://migom6.github.io/insta-youtube/?">click here</a> 
